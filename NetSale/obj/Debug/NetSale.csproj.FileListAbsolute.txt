@@ -1,0 +1,12 @@
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\bin\Debug\NetSale.exe.config
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\bin\Debug\NetSale.exe
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\bin\Debug\NetSale.pdb
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.csprojAssemblyReference.cache
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Properties.Resources.resources
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.csproj.GenerateResource.cache
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.csproj.CoreCompileInputs.cache
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.exe
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.pdb
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Splash.resources
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Bienvenido.resources
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Confirmar_compra.resources

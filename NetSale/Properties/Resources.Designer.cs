@@ -83,9 +83,9 @@ namespace NetSale.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen_inicio {
+        internal static System.Drawing.Bitmap Imagen {
             get {
-                object obj = ResourceManager.GetObject("Imagen inicio", resourceCulture);
+                object obj = ResourceManager.GetObject("Imagen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

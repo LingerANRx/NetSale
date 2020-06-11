@@ -75,7 +75,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::NetSale.Properties.Resources.Imagen_inicio;
+            this.pictureBox1.Image = global::NetSale.Properties.Resources.Imagen;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(492, 192);
             this.pictureBox1.Name = "pictureBox1";

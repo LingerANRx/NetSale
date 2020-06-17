@@ -14,6 +14,9 @@ namespace NetSale
     {
         static double totalFinal = 0.0;
         static List<Producto> productos = new List<Producto>();
+
+        public static double TotalFinal { get => totalFinal; set => totalFinal = value; }
+
         public Confirmar_compra()
         {
             InitializeComponent();
@@ -53,7 +56,7 @@ namespace NetSale
             lvProductos.Clear();
             this.Hide();
             productos.Clear();
-            totalFinal = 0.00;
+            TotalFinal = 0.00;
             txt_Total.Text = string.Empty;
         }
 
@@ -61,14 +64,20 @@ namespace NetSale
         {
             for (int i = 0; i < productos.Count; i++)
             {
-                totalFinal = totalFinal + Convert.ToDouble(productos[i].total);
+                TotalFinal = TotalFinal + Convert.ToDouble(productos[i].total);
             }
-            return totalFinal;
+            return TotalFinal;
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Ticket frm4 = new Ticket();
+            frm4.ShowDialog();
         }
     }
 }

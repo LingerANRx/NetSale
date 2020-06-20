@@ -20,8 +20,15 @@ namespace NetSale
         private void button1_Click(object sender, EventArgs e)
         {
             Menu frm3 = new Menu();
-            frm3.ShowDialog();
             this.Hide();
+            frm3.ShowDialog();
+            this.Close();
+        }
+
+        private void administrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login frmAd = new Login();
+            frmAd.ShowDialog();
         }
     }
 }

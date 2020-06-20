@@ -109,6 +109,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lvProductos);
             this.Name = "Confirmar_compra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmar compra";
             this.Load += new System.EventHandler(this.Confirmar_compra_Load);
             this.ResumeLayout(false);

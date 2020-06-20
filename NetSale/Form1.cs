@@ -36,8 +36,13 @@ namespace NetSale
             Bienvenido f2 = new Bienvenido();
             this.Hide();
             f2.ShowDialog();
-            this.Close();
+            this.Close();timer1.Stop();
             
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

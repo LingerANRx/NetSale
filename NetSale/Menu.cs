@@ -198,5 +198,10 @@ namespace NetSale
             cantidadP9.Value = 0;
             P9.Checked = false;
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

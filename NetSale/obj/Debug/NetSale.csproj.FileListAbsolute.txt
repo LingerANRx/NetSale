@@ -12,3 +12,5 @@ C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\Net
 C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Confirmar_compra.resources
 C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Menu.resources
 C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Ticket.resources
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Login.resources
+C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Administrador.resources

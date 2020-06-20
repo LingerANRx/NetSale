@@ -14,6 +14,7 @@ namespace NetSale
     {
         static double totalFinal = 0.0;
         static List<Producto> productos = new List<Producto>();
+        
 
         public static double TotalFinal { get => totalFinal; set => totalFinal = value; }
 
@@ -26,6 +27,7 @@ namespace NetSale
         {
             Columnas();
             RellenaListView();
+            txt_Total.Text = "$0";
             txt_Total.Text = Convert.ToString(TotalText());
         }
         public void Columnas()
@@ -76,8 +78,18 @@ namespace NetSale
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Ticket frm4 = new Ticket();
-            frm4.ShowDialog();
+            if (txt_Total.Text == "$0")
+                MessageBox.Show("Primero necesitas agregar productos al carrito...", "Carrito vacio");
+            else
+            {
+                lvProductos.Clear();
+                this.Hide();
+                productos.Clear();
+                txt_Total.Text = string.Empty;
+                Ticket frm4 = new Ticket();
+                frm4.ShowDialog();
+            }
+            
         }
     }
 }

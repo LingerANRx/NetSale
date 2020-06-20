@@ -38,6 +38,10 @@ namespace NetSale
                 {
                     this.Close();
                 }
+                this.Close();
+                Confirmar_compra.TotalFinal = 0.0;
+                Confirmar_compra frm4 = new Confirmar_compra();
+                frm4.Close();
             }
             else
             {

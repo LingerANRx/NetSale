@@ -124,6 +124,7 @@
             this.Controls.Add(this.txt_Dinero);
             this.Controls.Add(this.txt_totalPagar);
             this.Name = "Ticket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket";
             this.Load += new System.EventHandler(this.Ticket_Load);
             this.ResumeLayout(false);

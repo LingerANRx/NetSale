@@ -8,20 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace NetSale
 {
     public partial class Ticket : Form
     {
         public static double totalTicket;
+        CRUD crd = new CRUD();
+        Confirmar_compra crc = new Confirmar_compra();
         public Ticket()
         {
             InitializeComponent();
         }
 
+        
+
         private void pagar_Click(object sender, EventArgs e)
         {
             if ((txt_Dinero.Text != string.Empty) && (Convert.ToDouble(txt_Dinero.Text) >= Convert.ToDouble(Confirmar_compra.TotalFinal)))
             {
+                crc.reducirInventario();
+                
                 totalTicket = Convert.ToDouble(txt_Dinero.Text) - Convert.ToDouble(Confirmar_compra.TotalFinal);
                 txt_Cambio.Text = Convert.ToString(totalTicket);
                 DialogResult _Resp = new DialogResult();
@@ -31,11 +38,13 @@ namespace NetSale
                 if (_Resp == DialogResult.Yes)
                 {
                     //Imprmmir el ticket
-                    //GenerarTicket(varFolio);
+                    crc.generarTicket(txt_Dinero.Text, txt_Cambio.Text);
+                    crc.productosClear();
                     this.Close();
                 }
                 else
                 {
+                    crc.productosClear();
                     this.Close();
                 }
                 this.Close();

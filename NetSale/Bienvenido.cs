@@ -30,5 +30,11 @@ namespace NetSale
             Login frmAd = new Login();
             frmAd.ShowDialog();
         }
+
+        private void creditos_Click(object sender, EventArgs e)
+        {
+            Creditos frmCr = new Creditos();
+            frmCr.ShowDialog();
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace NetSale
 
         private void btn_entrar_Click(object sender, EventArgs e)
         {
-            if (crd.validacion(txt_usuario.Text, txt_password.Text) == 1)
+            if (crd.validacion(txt_usuario.Text, txt_password.Text) == 11)
             {
                 Administrador frmRoot = new Administrador();
                 this.Hide();
@@ -32,7 +32,18 @@ namespace NetSale
                 this.Close();
             }
             else
-                MessageBox.Show("La contraseña o el usuario no coinciden. Vuelve a intentarlo", "hmm algo esta mal...");
+            {
+                if (crd.validacion(txt_usuario.Text, txt_password.Text) == 1)
+                {
+                    Usuario frmUser = new Usuario();
+                    this.Hide();
+                    frmUser.ShowDialog();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("La contraseña o el usuaio no coinciden", "Algo anda mal...");
+            }
+                
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

@@ -12,22 +12,16 @@ using System.Data.SqlClient;
 
 namespace NetSale
 {
-    public partial class Administrador : Form
+    public partial class Usuario : Form
     {
         CRUD crd = new CRUD();
         SqlConnection nvConexion = ConectarDB.conexion();
-        Menu mn = new Menu();
-        public Administrador()
+        public Usuario()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Administrador_Load(object sender, EventArgs e)
+        private void Usuario_Load(object sender, EventArgs e)
         {
             txt_pasta.ReadOnly = true;
             txt_hambur.ReadOnly = true;
@@ -68,29 +62,18 @@ namespace NetSale
             mp7.Text = Convert.ToString(CRUD.inventarios[6]);
             mp8.Text = Convert.ToString(CRUD.inventarios[7]);
             mp9.Text = Convert.ToString(CRUD.inventarios[8]);
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnActualizarP_Click(object sender, EventArgs e)
         {
-            if (txt_pasta.Text == string.Empty)
-                EP.SetError(txt_pasta, "Campo requerido");
-            if (txt_hambur.Text == string.Empty)
-                EP.SetError(txt_hambur, "Campo requerido");
-            if (txt_cCompleta.Text == string.Empty)
-                EP.SetError(txt_cCompleta, "Campo requerido");
-            if (txt_Jugo.Text == string.Empty)
-                EP.SetError(txt_Jugo, "Campo requerido");
-            if (txt_cocaC.Text == string.Empty)
-                EP.SetError(txt_cocaC, "Campo requerido");
-            if (txt_agua.Text == string.Empty)
-                EP.SetError(txt_agua, "Campo requerido");
-            if (txt_choco.Text == string.Empty)
-                EP.SetError(txt_choco, "Campo requerido");
-            if (txt_pay.Text == string.Empty)
-                EP.SetError(txt_pay, "Campo requerido");
-            if (txt_galletas.Text == string.Empty)
-                EP.SetError(txt_galletas, "Campo requerido");
+            CRUD objread = new CRUD();
+            dgvProductos.DataSource = objread.Read();
+            if (dgvProductos.Rows.Count == 0)
+                MessageBox.Show("No hay Datos en la tabla");
+        }
+
+        private void btn_precios_Click(object sender, EventArgs e)
+        {
             if (btn_precios.Text == "Editar")
             {
                 txt_pasta.ReadOnly = false;
@@ -106,6 +89,24 @@ namespace NetSale
             }
             else
             {
+                if (txt_pasta.Text == string.Empty)
+                    EP.SetError(txt_pasta, "Campo requerido");
+                if (txt_hambur.Text == string.Empty)
+                    EP.SetError(txt_hambur, "Campo requerido");
+                if (txt_cCompleta.Text == string.Empty)
+                    EP.SetError(txt_cCompleta, "Campo requerido");
+                if (txt_Jugo.Text == string.Empty)
+                    EP.SetError(txt_Jugo, "Campo requerido");
+                if (txt_cocaC.Text == string.Empty)
+                    EP.SetError(txt_cocaC, "Campo requerido");
+                if (txt_agua.Text == string.Empty)
+                    EP.SetError(txt_agua, "Campo requerido");
+                if (txt_choco.Text == string.Empty)
+                    EP.SetError(txt_choco, "Campo requerido");
+                if (txt_pay.Text == string.Empty)
+                    EP.SetError(txt_pay, "Campo requerido");
+                if (txt_galletas.Text == string.Empty)
+                    EP.SetError(txt_galletas, "Campo requerido");
                 if (crd.modPrecios(txt_pasta.Text, txt_hambur.Text, txt_cCompleta.Text, txt_Jugo.Text, txt_cocaC.Text, txt_agua.Text, txt_choco.Text, txt_pay.Text, txt_galletas.Text) == 9)
                 {
                     txt_pasta.ReadOnly = true;
@@ -122,10 +123,6 @@ namespace NetSale
 
                 btn_precios.Text = "Editar";
             }
-        }
-
-        private void Status_Click(object sender, EventArgs e)
-        {
         }
 
         private void btn_modInven_Click(object sender, EventArgs e)
@@ -181,83 +178,57 @@ namespace NetSale
             }
         }
 
-        private void btnActualizarP_Click(object sender, EventArgs e)
+        private void btn_modInven_Click_1(object sender, EventArgs e)
         {
-            CRUD objread = new CRUD();
-            dgvProductos.DataSource = objread.Read();
-            if (dgvProductos.Rows.Count == 0)
-                MessageBox.Show("No hay Datos en la tabla");
-        }
-
-        private void btnActualizarU_Click(object sender, EventArgs e)
-        {
-            CRUD objread = new CRUD();
-            dgvUsuarios.DataSource = objread.ReadUsers();
-            if (dgvUsuarios.Rows.Count == 0)
-                MessageBox.Show("No hay Datos en la tabla");
-        }
-
-        private void btnEditarDatos_Click(object sender, EventArgs e)
-        {
-            if (txtNombreAnterior.Text == string.Empty)
-                EP.SetError(txtNombreAnterior, "Campo requerido");
-            if (txtNuevoNombre.Text == string.Empty)
-                EP.SetError(txtNuevoNombre, "Campo requerido");
-            if (txtPassAdmin.Text == string.Empty)
-                EP.SetError(txtPassAdmin, "Campo requerido");
-            DialogResult OK;
-            OK = MessageBox.Show("Seguro que deceas modificar la contraseña?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-            if(DialogResult.OK == OK)
+            if (mp1.Text == string.Empty)
+                EP.SetError(mp1, "Campo requerido");
+            if (mp2.Text == string.Empty)
+                EP.SetError(mp2, "Campo requerido");
+            if (mp3.Text == string.Empty)
+                EP.SetError(mp3, "Campo requerido");
+            if (mp4.Text == string.Empty)
+                EP.SetError(mp4, "Campo requerido");
+            if (mp5.Text == string.Empty)
+                EP.SetError(mp5, "Campo requerido");
+            if (mp6.Text == string.Empty)
+                EP.SetError(mp6, "Campo requerido");
+            if (mp7.Text == string.Empty)
+                EP.SetError(mp7, "Campo requerido");
+            if (mp8.Text == string.Empty)
+                EP.SetError(mp8, "Campo requerido");
+            if (mp9.Text == string.Empty)
+                EP.SetError(mp9, "Campo requerido");
+            if (btn_modInven.Text == "Editar")
             {
-                if(crd.editarAdmin(txtNombreAnterior.Text, txtNuevoNombre.Text, txtPassAdmin.Text) == 1)
-                {
-                    MessageBox.Show("Modificacion realizada con exito", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Algo ocurrio mal durante el proceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                txtNombreAnterior.Text = string.Empty;
-                txtNombreAnterior.Text = string.Empty;
-                txtPassAdmin.Text = string.Empty;
-                
+                mp1.ReadOnly = false;
+                mp2.ReadOnly = false;
+                mp3.ReadOnly = false;
+                mp4.ReadOnly = false;
+                mp5.ReadOnly = false;
+                mp6.ReadOnly = false;
+                mp7.ReadOnly = false;
+                mp8.ReadOnly = false;
+                mp9.ReadOnly = false;
+                btn_modInven.Text = "Guardar";
             }
-            
-        }
-
-        private void btnAgregarUsuario_Click(object sender, EventArgs e)
-        {
-            if (txtNombreUsuario.Text == string.Empty)
-                EP.SetError(txtNombreUsuario, "Campo requerido");
-            if (txtPassUsuario.Text == string.Empty)
-                EP.SetError(txtPassUsuario, "Campo requerido");
-            DialogResult OK;
-            OK = MessageBox.Show("Seguro que deceas agregar ujn nuevo usuario?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-            if (DialogResult.OK == OK)
+            else
             {
-                if(crd.Create(txtNombreUsuario.Text, txtPassUsuario.Text) == 1)
+                if (crd.modInventario(mp1.Text, mp2.Text, mp3.Text, mp4.Text, mp5.Text, mp6.Text, mp7.Text, mp8.Text, mp9.Text) == 9)
                 {
-                    MessageBox.Show("Usuario agregado de manera exitosa.", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    mp1.ReadOnly = true;
+                    mp2.ReadOnly = true;
+                    mp3.ReadOnly = true;
+                    mp4.ReadOnly = true;
+                    mp5.ReadOnly = true;
+                    mp6.ReadOnly = true;
+                    mp7.ReadOnly = true;
+                    mp8.ReadOnly = true;
+                    mp9.ReadOnly = true;
+                    MessageBox.Show("Modificacion realizada con exito");
                 }
-                else
-                {
-                    MessageBox.Show("Ocurrio un error durante el proceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
 
-        private void btnEliminarUsuario_Click(object sender, EventArgs e)
-        {
-            if (txtNombreUsuario.Text == string.Empty)
-                EP.SetError(txtNombreUsuario, "Se requiere minimo el nombre del Uusuario");
-            DialogResult OK;
-            OK = MessageBox.Show("¿Seguro que quieres eliminar el Usuario?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-            if(DialogResult.OK == OK)
-            {
-                MessageBox.Show(crd.Delete(txtNombreUsuario.Text));
+                btn_modInven.Text = "Editar";
             }
-            txtNombreUsuario.Clear();
-            txtPassUsuario.Clear();
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.creditos = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -50,18 +50,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido a NetSale";
             // 
-            // button2
+            // creditos
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::NetSale.Properties.Resources.factura;
-            this.button2.Location = new System.Drawing.Point(134, 611);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(245, 249);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Creditos";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.creditos.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.creditos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditos.Image = global::NetSale.Properties.Resources.factura;
+            this.creditos.Location = new System.Drawing.Point(134, 611);
+            this.creditos.Name = "creditos";
+            this.creditos.Size = new System.Drawing.Size(245, 249);
+            this.creditos.TabIndex = 3;
+            this.creditos.Text = "Creditos";
+            this.creditos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.creditos.UseVisualStyleBackColor = false;
+            this.creditos.Click += new System.EventHandler(this.creditos_Click);
             // 
             // button1
             // 
@@ -113,7 +114,7 @@
             // administrarToolStripMenuItem
             // 
             this.administrarToolStripMenuItem.Name = "administrarToolStripMenuItem";
-            this.administrarToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.administrarToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.administrarToolStripMenuItem.Text = "Administrar";
             this.administrarToolStripMenuItem.Click += new System.EventHandler(this.administrarToolStripMenuItem_Click);
             // 
@@ -123,7 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1220, 1062);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.creditos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -146,7 +147,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button creditos;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ajustesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarToolStripMenuItem;

@@ -13,6 +13,8 @@ namespace NetSale
     public partial class Menu : Form
     {
         static Confirmar_compra ConfirmarVenta = new Confirmar_compra();
+        CRUD crd = new CRUD();
+        Bienvenido frm2 = new Bienvenido();
         public Menu()
         {
             InitializeComponent();
@@ -201,7 +203,28 @@ namespace NetSale
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            crd.llenarPrecios();
+            precioP1.Text = Convert.ToString("$"+CRUD.precios[0]);
+            precioP2.Text = Convert.ToString("$" + CRUD.precios[1]);
+            precioP3.Text = Convert.ToString("$" + CRUD.precios[2]);
+            precioP4.Text = Convert.ToString("$" + CRUD.precios[3]);
+            precioP5.Text = Convert.ToString("$" + CRUD.precios[4]);
+            precioP6.Text = Convert.ToString("$" + CRUD.precios[5]);
+            precioP7.Text = Convert.ToString("$" + CRUD.precios[6]);
+            precioP8.Text = Convert.ToString("$" + CRUD.precios[7]);
+            precioP9.Text = Convert.ToString("$" + CRUD.precios[8]);
+        }
+
+        private void regresarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm2.ShowDialog();
+            this.Close();
             
+        }
+
+        private void Bebida3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

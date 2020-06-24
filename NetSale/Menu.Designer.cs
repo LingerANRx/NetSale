@@ -79,6 +79,9 @@
             this.img7 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.limpiar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.cantidadP1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cantidadP3)).BeginInit();
@@ -100,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.img8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantidadP7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img7)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -140,7 +144,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Fugaz One", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(62, 141);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(260, 720);
+            this.groupBox1.Size = new System.Drawing.Size(287, 720);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alimentos";
@@ -149,7 +153,7 @@
             // 
             this.precioP3.AutoSize = true;
             this.precioP3.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP3.Location = new System.Drawing.Point(153, 484);
+            this.precioP3.Location = new System.Drawing.Point(188, 486);
             this.precioP3.Name = "precioP3";
             this.precioP3.Size = new System.Drawing.Size(74, 27);
             this.precioP3.TabIndex = 15;
@@ -159,7 +163,7 @@
             // 
             this.precioP2.AutoSize = true;
             this.precioP2.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP2.Location = new System.Drawing.Point(150, 265);
+            this.precioP2.Location = new System.Drawing.Point(188, 263);
             this.precioP2.Name = "precioP2";
             this.precioP2.Size = new System.Drawing.Size(74, 27);
             this.precioP2.TabIndex = 14;
@@ -169,7 +173,7 @@
             // 
             this.precioP1.AutoSize = true;
             this.precioP1.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP1.Location = new System.Drawing.Point(150, 43);
+            this.precioP1.Location = new System.Drawing.Point(188, 43);
             this.precioP1.Name = "precioP1";
             this.precioP1.Size = new System.Drawing.Size(74, 27);
             this.precioP1.TabIndex = 13;
@@ -180,27 +184,27 @@
             this.Alimento3.AutoSize = true;
             this.Alimento3.Location = new System.Drawing.Point(23, 484);
             this.Alimento3.Name = "Alimento3";
-            this.Alimento3.Size = new System.Drawing.Size(124, 29);
+            this.Alimento3.Size = new System.Drawing.Size(119, 29);
             this.Alimento3.TabIndex = 12;
-            this.Alimento3.Text = "Alimento3";
+            this.Alimento3.Text = "Comida C.";
             // 
             // Alimento2
             // 
             this.Alimento2.AutoSize = true;
             this.Alimento2.Location = new System.Drawing.Point(23, 263);
             this.Alimento2.Name = "Alimento2";
-            this.Alimento2.Size = new System.Drawing.Size(124, 29);
+            this.Alimento2.Size = new System.Drawing.Size(159, 29);
             this.Alimento2.TabIndex = 11;
-            this.Alimento2.Text = "Alimento2";
+            this.Alimento2.Text = "Hamburguesa";
             // 
             // Alimento1
             // 
             this.Alimento1.AutoSize = true;
             this.Alimento1.Location = new System.Drawing.Point(23, 41);
             this.Alimento1.Name = "Alimento1";
-            this.Alimento1.Size = new System.Drawing.Size(121, 29);
+            this.Alimento1.Size = new System.Drawing.Size(77, 29);
             this.Alimento1.TabIndex = 10;
-            this.Alimento1.Text = "Alimento1";
+            this.Alimento1.Text = "Pasta";
             // 
             // P3
             // 
@@ -292,7 +296,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Fugaz One", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(468, 141);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 720);
+            this.groupBox2.Size = new System.Drawing.Size(287, 720);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bebidas";
@@ -301,7 +305,7 @@
             // 
             this.precioP6.AutoSize = true;
             this.precioP6.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP6.Location = new System.Drawing.Point(145, 484);
+            this.precioP6.Location = new System.Drawing.Point(183, 484);
             this.precioP6.Name = "precioP6";
             this.precioP6.Size = new System.Drawing.Size(72, 27);
             this.precioP6.TabIndex = 17;
@@ -311,7 +315,7 @@
             // 
             this.precioP5.AutoSize = true;
             this.precioP5.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP5.Location = new System.Drawing.Point(145, 265);
+            this.precioP5.Location = new System.Drawing.Point(183, 263);
             this.precioP5.Name = "precioP5";
             this.precioP5.Size = new System.Drawing.Size(72, 27);
             this.precioP5.TabIndex = 16;
@@ -321,7 +325,7 @@
             // 
             this.precioP4.AutoSize = true;
             this.precioP4.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP4.Location = new System.Drawing.Point(145, 43);
+            this.precioP4.Location = new System.Drawing.Point(183, 43);
             this.precioP4.Name = "precioP4";
             this.precioP4.Size = new System.Drawing.Size(72, 27);
             this.precioP4.TabIndex = 15;
@@ -332,27 +336,28 @@
             this.Bebida3.AutoSize = true;
             this.Bebida3.Location = new System.Drawing.Point(16, 484);
             this.Bebida3.Name = "Bebida3";
-            this.Bebida3.Size = new System.Drawing.Size(98, 29);
+            this.Bebida3.Size = new System.Drawing.Size(113, 29);
             this.Bebida3.TabIndex = 14;
-            this.Bebida3.Text = "Bebida3";
+            this.Bebida3.Text = "Bonafont";
+            this.Bebida3.Click += new System.EventHandler(this.Bebida3_Click);
             // 
             // Bebida2
             // 
             this.Bebida2.AutoSize = true;
             this.Bebida2.Location = new System.Drawing.Point(16, 263);
             this.Bebida2.Name = "Bebida2";
-            this.Bebida2.Size = new System.Drawing.Size(98, 29);
+            this.Bebida2.Size = new System.Drawing.Size(114, 29);
             this.Bebida2.TabIndex = 13;
-            this.Bebida2.Text = "Bebida2";
+            this.Bebida2.Text = "Coca cola";
             // 
             // Bebida1
             // 
             this.Bebida1.AutoSize = true;
             this.Bebida1.Location = new System.Drawing.Point(16, 41);
             this.Bebida1.Name = "Bebida1";
-            this.Bebida1.Size = new System.Drawing.Size(95, 29);
+            this.Bebida1.Size = new System.Drawing.Size(104, 29);
             this.Bebida1.TabIndex = 12;
-            this.Bebida1.Text = "Bebida1";
+            this.Bebida1.Text = "Del valle";
             // 
             // P6
             // 
@@ -452,7 +457,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Fugaz One", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(863, 141);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(260, 720);
+            this.groupBox3.Size = new System.Drawing.Size(285, 720);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Postres";
@@ -461,7 +466,7 @@
             // 
             this.precioP9.AutoSize = true;
             this.precioP9.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP9.Location = new System.Drawing.Point(149, 484);
+            this.precioP9.Location = new System.Drawing.Point(187, 486);
             this.precioP9.Name = "precioP9";
             this.precioP9.Size = new System.Drawing.Size(75, 27);
             this.precioP9.TabIndex = 20;
@@ -471,7 +476,7 @@
             // 
             this.precioP8.AutoSize = true;
             this.precioP8.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP8.Location = new System.Drawing.Point(149, 265);
+            this.precioP8.Location = new System.Drawing.Point(187, 265);
             this.precioP8.Name = "precioP8";
             this.precioP8.Size = new System.Drawing.Size(75, 27);
             this.precioP8.TabIndex = 19;
@@ -481,7 +486,7 @@
             // 
             this.precioP7.AutoSize = true;
             this.precioP7.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioP7.Location = new System.Drawing.Point(149, 43);
+            this.precioP7.Location = new System.Drawing.Point(187, 43);
             this.precioP7.Name = "precioP7";
             this.precioP7.Size = new System.Drawing.Size(75, 27);
             this.precioP7.TabIndex = 18;
@@ -492,27 +497,27 @@
             this.Postre3.AutoSize = true;
             this.Postre3.Location = new System.Drawing.Point(18, 484);
             this.Postre3.Name = "Postre3";
-            this.Postre3.Size = new System.Drawing.Size(100, 29);
+            this.Postre3.Size = new System.Drawing.Size(103, 29);
             this.Postre3.TabIndex = 17;
-            this.Postre3.Text = "Postre3";
+            this.Postre3.Text = "Galletas";
             // 
             // Postre2
             // 
             this.Postre2.AutoSize = true;
             this.Postre2.Location = new System.Drawing.Point(18, 263);
             this.Postre2.Name = "Postre2";
-            this.Postre2.Size = new System.Drawing.Size(100, 29);
+            this.Postre2.Size = new System.Drawing.Size(117, 29);
             this.Postre2.TabIndex = 16;
-            this.Postre2.Text = "Postre2";
+            this.Postre2.Text = "Pay limon";
             // 
             // Postre1
             // 
             this.Postre1.AutoSize = true;
             this.Postre1.Location = new System.Drawing.Point(18, 41);
             this.Postre1.Name = "Postre1";
-            this.Postre1.Size = new System.Drawing.Size(97, 29);
+            this.Postre1.Size = new System.Drawing.Size(159, 29);
             this.Postre1.TabIndex = 15;
-            this.Postre1.Text = "Postre1";
+            this.Postre1.Text = "Pastel Choco.";
             // 
             // P9
             // 
@@ -612,6 +617,32 @@
             this.limpiar.UseVisualStyleBackColor = true;
             this.limpiar.Click += new System.EventHandler(this.limpiar_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1199, 33);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regresarToolStripMenuItem});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(102, 29);
+            this.archivoToolStripMenuItem.Text = "Programa";
+            // 
+            // regresarToolStripMenuItem
+            // 
+            this.regresarToolStripMenuItem.Name = "regresarToolStripMenuItem";
+            this.regresarToolStripMenuItem.Size = new System.Drawing.Size(164, 30);
+            this.regresarToolStripMenuItem.Text = "Regresar";
+            this.regresarToolStripMenuItem.Click += new System.EventHandler(this.regresarToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -623,6 +654,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -651,6 +684,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.img8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cantidadP7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img7)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -709,5 +744,8 @@
         private System.Windows.Forms.Label Postre3;
         private System.Windows.Forms.Label Postre2;
         private System.Windows.Forms.Label Postre1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem regresarToolStripMenuItem;
     }
 }

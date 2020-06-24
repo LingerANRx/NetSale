@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace NetSale
 {
@@ -14,7 +19,7 @@ namespace NetSale
     {
         static double totalFinal = 0.0;
         static List<Producto> productos = new List<Producto>();
-        
+        CRUD crd = new CRUD();
 
         public static double TotalFinal { get => totalFinal; set => totalFinal = value; }
 
@@ -53,6 +58,48 @@ namespace NetSale
             }
         }
 
+        public void reducirInventario()
+        {
+            for (int i = 0; i < productos.Count; i++)
+            {
+                crd.reducirInventario(productos[i].producto, productos[i].cantidad);
+            }
+        }
+
+        public void productosClear()
+        {
+            productos.Clear();
+        }
+
+        public void generarTicket(string dinero, string cambio)
+        {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream("SO000001.pdf", FileMode.Create));
+            doc.Open();
+            Paragraph title = new Paragraph();
+            title.Font = FontFactory.GetFont(FontFactory.TIMES_BOLD, 20f, BaseColor.BLACK);
+            title.Add("N E T   S A L E");
+            doc.Add(new Paragraph("------------------------------------------------- "));
+            doc.Add(new Paragraph(" "));
+            doc.Add(title);
+            doc.Add(new Paragraph(" ------------------------------------------------"));
+            doc.Add(new Paragraph(""));
+            for (int i = 0; i < productos.Count; i++)
+            {
+                doc.Add(new Paragraph(string.Format("Producto: {0}  || Cantidad: {1}  || Precio unitario: {2} ||  Subtotal: {3}", productos[i].producto, productos[i].cantidad, productos[i].precio, productos[i].total)));
+            }
+            doc.Add(new Paragraph(" "));
+            doc.Add(new Paragraph("Total: " + Confirmar_compra.TotalFinal));
+            doc.Add(new Paragraph("Efectivo: " + dinero));
+            doc.Add(new Paragraph("Cambio: " + cambio));
+            doc.Add(new Paragraph(" "));
+            doc.Add(new Paragraph(" "));
+            doc.Add(new Paragraph("Gracias por preferirnos :) "));
+            doc.Close();
+            System.Diagnostics.Process.Start("AcroRd32.exe", "SO000001.pdf");
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             lvProductos.Clear();
@@ -82,9 +129,10 @@ namespace NetSale
                 MessageBox.Show("Primero necesitas agregar productos al carrito...", "Carrito vacio");
             else
             {
+                //reducirInventario(); //LLevar a ticket
                 lvProductos.Clear();
                 this.Hide();
-                productos.Clear();
+                //productos.Clear(); //llevar a ticket
                 txt_Total.Text = string.Empty;
                 Ticket frm4 = new Ticket();
                 frm4.ShowDialog();

@@ -171,5 +171,68 @@
   <ItemGroup>
     <None Include="Resources\factura.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HAM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASTA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASATA3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASTA4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUR.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cola.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bona.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

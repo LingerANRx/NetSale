@@ -18,3 +18,22 @@ C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\Net
 C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.Creditos.resources
 C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\bin\Debug\itextsharp.dll
 C:\Users\CARLITOSDMS\Desktop\Proyecto programacion\NetSale\NetSale\obj\Debug\NetSale.csproj.CopyComplete
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\bin\Debug\NetSale.exe.config
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\bin\Debug\NetSale.exe
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\bin\Debug\NetSale.pdb
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.csprojAssemblyReference.cache
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Administrador.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Bienvenido.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Confirmar_compra.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Creditos.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Splash.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Login.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Menu.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Properties.Resources.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Ticket.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.Usuario.resources
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.csproj.GenerateResource.cache
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.csproj.CoreCompileInputs.cache
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.csproj.CopyComplete
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.exe
+C:\Users\jmendoza\Desktop\Zuri\NetSale\NetSale\obj\Debug\NetSale.pdb

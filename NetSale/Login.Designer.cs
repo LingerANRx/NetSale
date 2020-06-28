@@ -39,66 +39,78 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 62);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(106, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
+            this.label1.Text = "USUARIO :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 169);
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
+            this.label2.Size = new System.Drawing.Size(124, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Contraseña:";
+            this.label2.Text = "CONTRASEÑA :";
             // 
             // txt_usuario
             // 
-            this.txt_usuario.Location = new System.Drawing.Point(164, 59);
+            this.txt_usuario.Location = new System.Drawing.Point(219, 63);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(2);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(185, 26);
+            this.txt_usuario.Size = new System.Drawing.Size(151, 20);
             this.txt_usuario.TabIndex = 2;
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(164, 169);
+            this.txt_password.Location = new System.Drawing.Point(219, 138);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(185, 26);
+            this.txt_password.Size = new System.Drawing.Size(151, 20);
             this.txt_password.TabIndex = 3;
             // 
             // btn_entrar
             // 
-            this.btn_entrar.Location = new System.Drawing.Point(164, 250);
+            this.btn_entrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar.Location = new System.Drawing.Point(109, 186);
+            this.btn_entrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(75, 34);
+            this.btn_entrar.Size = new System.Drawing.Size(116, 47);
             this.btn_entrar.TabIndex = 4;
-            this.btn_entrar.Text = "Entrar";
+            this.btn_entrar.Text = "ENTRAR";
             this.btn_entrar.UseVisualStyleBackColor = true;
             this.btn_entrar.Click += new System.EventHandler(this.btn_entrar_Click);
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(273, 250);
+            this.btn_cancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Location = new System.Drawing.Point(280, 186);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(85, 34);
+            this.btn_cancelar.Size = new System.Drawing.Size(107, 47);
             this.btn_cancelar.TabIndex = 5;
-            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.Text = "CANCELAR";
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 355);
+            this.BackgroundImage = global::NetSale.Properties.Resources.ver;
+            this.ClientSize = new System.Drawing.Size(533, 244);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_entrar);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
